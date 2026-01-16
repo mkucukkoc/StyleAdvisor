@@ -1,0 +1,616 @@
+{
+  "common": {
+    "appName": "StyleAdvisor AI",
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu",
+    "retry": "Tekrar Dene",
+    "cancel": "İptal",
+    "save": "Kaydet",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "done": "Tamam",
+    "next": "İleri",
+    "back": "Geri",
+    "skip": "Atla",
+    "continue": "Devam Et",
+    "confirm": "Onayla",
+    "close": "Kapat",
+    "search": "Ara",
+    "filter": "Filtrele",
+    "sort": "Sırala",
+    "share": "Paylaş",
+    "favorite": "Favorilere Ekle",
+    "unfavorite": "Favorilerden Kaldır",
+    "seeAll": "Tümünü Gör",
+    "learnMore": "Daha Fazla Bilgi",
+    "getStarted": "Başla",
+    "yes": "Evet",
+    "no": "Hayır",
+    "or": "veya",
+    "and": "ve",
+    "offline": "Çevrimdışısınız",
+    "noResults": "Sonuç bulunamadı",
+    "emptyList": "Henüz bir şey yok"
+  },
+  "auth": {
+    "welcome": {
+      "title": "Kişisel AI Moda Danışmanınız",
+      "subtitle": "Yapay zeka destekli kişiselleştirilmiş kıyafet önerileri, stil analizi ve alışveriş tavsiyeleri alın",
+      "loginButton": "Giriş Yap",
+      "registerButton": "Hesap Oluştur"
+    },
+    "login": {
+      "title": "Tekrar Hoş Geldiniz",
+      "subtitle": "Stil yolculuğunuza devam etmek için giriş yapın",
+      "emailLabel": "E-posta",
+      "emailPlaceholder": "E-posta adresinizi girin",
+      "passwordLabel": "Şifre",
+      "passwordPlaceholder": "Şifrenizi girin",
+      "forgotPassword": "Şifremi Unuttum",
+      "loginButton": "Giriş Yap",
+      "noAccount": "Hesabınız yok mu?",
+      "signUp": "Kayıt Ol",
+      "orContinueWith": "Veya şununla devam edin",
+      "apple": "Apple ile Devam Et",
+      "google": "Google ile Devam Et",
+      "invalidCredentials": "Geçersiz e-posta veya şifre",
+      "success": "Tekrar hoş geldiniz!"
+    },
+    "register": {
+      "title": "Hesap Oluştur",
+      "subtitle": "Kişiselleştirilmiş stil yolculuğunuza başlayın",
+      "nameLabel": "Ad Soyad",
+      "namePlaceholder": "Adınızı ve soyadınızı girin",
+      "emailLabel": "E-posta",
+      "emailPlaceholder": "E-posta adresinizi girin",
+      "passwordLabel": "Şifre",
+      "passwordPlaceholder": "Bir şifre oluşturun",
+      "confirmPasswordLabel": "Şifre Tekrar",
+      "confirmPasswordPlaceholder": "Şifrenizi tekrar girin",
+      "termsAgreement": "Hesap oluşturarak şunları kabul etmiş olursunuz:",
+      "termsLink": "Kullanım Koşulları",
+      "privacyLink": "Gizlilik Politikası",
+      "registerButton": "Hesap Oluştur",
+      "haveAccount": "Zaten hesabınız var mı?",
+      "signIn": "Giriş Yap",
+      "passwordMismatch": "Şifreler eşleşmiyor",
+      "success": "Hesap başarıyla oluşturuldu!"
+    },
+    "forgotPassword": {
+      "title": "Şifre Sıfırla",
+      "subtitle": "E-posta adresinizi girin, size sıfırlama bağlantısı gönderelim",
+      "emailLabel": "E-posta",
+      "emailPlaceholder": "E-posta adresinizi girin",
+      "sendButton": "Sıfırlama Bağlantısı Gönder",
+      "backToLogin": "Girişe Dön",
+      "success": "Sıfırlama bağlantısı e-postanıza gönderildi",
+      "emailNotFound": "E-posta bulunamadı"
+    },
+    "termsGate": {
+      "title": "Koşullar ve Gizlilik",
+      "subtitle": "Devam etmek için lütfen koşullarımızı inceleyin ve kabul edin",
+      "termsTitle": "Kullanım Koşulları",
+      "privacyTitle": "Gizlilik Politikası",
+      "acceptTerms": "Kullanım Koşullarını kabul ediyorum",
+      "acceptPrivacy": "Gizlilik Politikasını kabul ediyorum",
+      "continueButton": "Devam Et",
+      "mustAccept": "Devam etmek için her ikisini de kabul etmelisiniz"
+    }
+  },
+  "onboarding": {
+    "profile": {
+      "title": "Sizi Tanıyalım",
+      "subtitle": "Deneyiminizi kişiselleştirmemize yardımcı olun",
+      "genderLabel": "Kendinizi nasıl tanımlarsınız?",
+      "genderOptions": {
+        "male": "Erkek",
+        "female": "Kadın",
+        "nonBinary": "Non-binary",
+        "preferNot": "Belirtmek istemiyorum"
+      },
+      "ageLabel": "Yaş (isteğe bağlı)",
+      "agePlaceholder": "Yaşınızı girin"
+    },
+    "bodyInfo": {
+      "title": "Vücut Bilgileri",
+      "subtitle": "Bu, size daha uygun kıyafetler önermemize yardımcı olur",
+      "heightLabel": "Boy",
+      "weightLabel": "Kilo",
+      "bodyTypeLabel": "Vücut Tipi",
+      "bodyTypes": {
+        "slim": "İnce",
+        "athletic": "Atletik",
+        "average": "Ortalama",
+        "curvy": "Dolgulu",
+        "plusSize": "Büyük Beden"
+      },
+      "skinToneLabel": "Ten Rengi",
+      "skinTones": {
+        "fair": "Açık",
+        "light": "Aydınlık",
+        "medium": "Orta",
+        "tan": "Bronz",
+        "dark": "Koyu",
+        "deep": "Çok Koyu"
+      }
+    },
+    "stylePreferences": {
+      "title": "Stiliniz",
+      "subtitle": "Size uygun stilleri seçin",
+      "styles": {
+        "casual": "Günlük",
+        "formal": "Resmi",
+        "streetwear": "Sokak Modası",
+        "bohemian": "Bohem",
+        "minimalist": "Minimalist",
+        "vintage": "Vintage",
+        "sporty": "Sportif",
+        "elegant": "Zarif",
+        "edgy": "Cesur",
+        "preppy": "Preppy"
+      },
+      "favoriteColorsLabel": "Favori Renkler",
+      "avoidColorsLabel": "Kaçınılan Renkler"
+    },
+    "budget": {
+      "title": "Bütçe ve Alışveriş",
+      "subtitle": "Öneriler için tercihlerinizi belirleyin",
+      "budgetLabel": "Aylık Moda Bütçesi",
+      "budgetRange": "{{min}} - {{max}} {{currency}}",
+      "retailersLabel": "Tercih Edilen Mağazalar",
+      "retailersSubtitle": "Bu mağazalardan ürünlere öncelik vereceğiz"
+    },
+    "notifications": {
+      "title": "Güncel Kalın",
+      "subtitle": "Yeni kıyafet fikirleri ve fırsatlar hakkında bildirim alın",
+      "enableButton": "Bildirimleri Aç",
+      "skipButton": "Şimdilik Değil",
+      "types": {
+        "dailyOutfit": "Günlük Kıyafet Fikirleri",
+        "deals": "Fırsatlar ve İndirimler",
+        "trends": "Trend Stiller",
+        "reminders": "Dolap Hatırlatmaları"
+      }
+    },
+    "complete": {
+      "title": "Hazırsınız!",
+      "subtitle": "Kişiselleştirilmiş stil yolculuğunuz şimdi başlıyor",
+      "startButton": "Keşfetmeye Başla",
+      "features": {
+        "analyze": "Kıyafetlerinizi AI ile analiz edin",
+        "suggestions": "Kişiselleştirilmiş öneriler alın",
+        "wardrobe": "Dijital dolabınızı oluşturun",
+        "shop": "Özel önerilerle alışveriş yapın"
+      }
+    }
+  },
+  "home": {
+    "greeting": "Merhaba, {{name}}",
+    "greetingDefault": "Merhaba",
+    "subtitle": "Bugün ne yapmak istersiniz?",
+    "quickActions": {
+      "title": "Hızlı İşlemler",
+      "analyze": "Kıyafet Analizi",
+      "wardrobe": "Dolabım",
+      "trends": "Trendler",
+      "favorites": "Favoriler"
+    },
+    "dailyOutfit": {
+      "title": "Günün Kıyafet Fikri",
+      "viewDetails": "Detayları Gör",
+      "refresh": "Yeni Fikir Al"
+    },
+    "promptChips": {
+      "title": "Şunları sorabilirsiniz...",
+      "work": "İşe ne giymeliyim?",
+      "date": "Randevu için kıyafet",
+      "casual": "Hafta sonu stili",
+      "formal": "Resmi etkinlik kıyafeti",
+      "weather": "Bugün ne giymeliyim?"
+    },
+    "trends": {
+      "title": "Şu An Trend",
+      "seeAll": "Tümünü Gör"
+    },
+    "recentAnalyses": {
+      "title": "Son Analizler",
+      "empty": "Henüz analiz yok",
+      "startFirst": "İlk analizinizi başlatın"
+    }
+  },
+  "analyze": {
+    "start": {
+      "title": "Stilinizi Analiz Edin",
+      "subtitle": "Kıyafetiniz hakkında AI destekli geri bildirim alın",
+      "photoOption": "Fotoğraf Çek veya Yükle",
+      "photoDescription": "Kıyafetinizin görsel analizini alın",
+      "textOption": "Kıyafetinizi Tanımlayın",
+      "textDescription": "Ne giydiğinizi bize anlatın",
+      "recentTitle": "Son Analizler"
+    },
+    "photoCapture": {
+      "title": "Kıyafetinizi Çekin",
+      "instructions": "İyi aydınlatmada durun ve tüm kıyafetinizi çekin",
+      "takePhoto": "Fotoğraf Çek",
+      "chooseFromGallery": "Galeriden Seç",
+      "permissionTitle": "Kamera İzni Gerekli",
+      "permissionMessage": "Kıyafet fotoğraflarınızı çekmek için kamera erişimine ihtiyacımız var",
+      "grantPermission": "İzin Ver"
+    },
+    "photoPicker": {
+      "title": "Fotoğraf Seç",
+      "selectFromGallery": "Galeriden Seç",
+      "permissionTitle": "Galeri İzni Gerekli",
+      "permissionMessage": "Kıyafet fotoğraflarınızı seçmek için galeri erişimine ihtiyacımız var"
+    },
+    "textRequest": {
+      "title": "Kıyafetinizi Tanımlayın",
+      "subtitle": "Ne giydiğinizi veya giymeyi planladığınızı bize anlatın",
+      "placeholder": "Örn: Lacivert blazer ceket, beyaz gömlek, haki pantolon ve kahverengi loafer giyiyorum. İş toplantısına gidiyorum...",
+      "occasionLabel": "Etkinlik",
+      "occasionPlaceholder": "Etkinlik seçin",
+      "occasions": {
+        "work": "İş / Ofis",
+        "casual": "Günlük",
+        "date": "Romantik Akşam",
+        "formal": "Resmi Etkinlik",
+        "party": "Parti",
+        "wedding": "Düğün",
+        "interview": "İş Görüşmesi",
+        "travel": "Seyahat",
+        "workout": "Spor",
+        "other": "Diğer"
+      },
+      "analyzeButton": "Kıyafetimi Analiz Et"
+    },
+    "review": {
+      "title": "İsteğinizi İnceleyin",
+      "subtitle": "Her şeyin doğru olduğundan emin olun",
+      "photoLabel": "Fotoğrafınız",
+      "descriptionLabel": "Açıklamanız",
+      "occasionLabel": "Etkinlik",
+      "editButton": "Düzenle",
+      "submitButton": "Analiz Al"
+    },
+    "processing": {
+      "title": "Stiliniz Analiz Ediliyor",
+      "steps": {
+        "uploading": "Görsel işleniyor...",
+        "analyzing": "Renkler ve desenler analiz ediliyor...",
+        "matching": "Stil eşleşmeleri bulunuyor...",
+        "generating": "Öneriler oluşturuluyor..."
+      },
+      "tip": "Bu genellikle 10-15 saniye sürer"
+    },
+    "result": {
+      "title": "Stil Analiziniz",
+      "overallScore": "Genel Puan",
+      "scoreLabels": {
+        "excellent": "Mükemmel",
+        "good": "İyi",
+        "average": "Ortalama",
+        "needsWork": "Geliştirilmeli"
+      },
+      "sections": {
+        "colorHarmony": "Renk Uyumu",
+        "fitAssessment": "Kalıp Değerlendirmesi",
+        "styleCoherence": "Stil Tutarlılığı",
+        "occasionMatch": "Etkinlik Uyumu"
+      },
+      "improvements": "İyileştirmeler",
+      "outfitSuggestions": "Kıyafet Önerileri",
+      "shopTheLook": "Görünümü Satın Al",
+      "shareResult": "Sonucu Paylaş",
+      "saveToFavorites": "Favorilere Kaydet",
+      "premiumLocked": "Premium ile Aç"
+    },
+    "improvements": {
+      "title": "Stil İyileştirmeleri",
+      "subtitle": "Görünümünüzü nasıl geliştirebileceğiniz",
+      "priority": {
+        "high": "Yüksek Öncelik",
+        "medium": "Orta Öncelik",
+        "low": "İyi Olur"
+      },
+      "markComplete": "Tamamlandı Olarak İşaretle"
+    },
+    "outfitSuggestions": {
+      "title": "Kıyafet Önerileri",
+      "subtitle": "Stilinize ve tercihlerinize göre",
+      "viewDetails": "Detayları Gör",
+      "shopThis": "Bu Görünümü Satın Al",
+      "lockedMessage": "Daha fazla öneri görmek için Premium'a yükseltin"
+    },
+    "outfitDetail": {
+      "title": "Kıyafet Detayları",
+      "items": "Bu kıyafetteki parçalar",
+      "totalPrice": "Toplam Fiyat",
+      "shopAll": "Tüm Parçaları Satın Al",
+      "saveOutfit": "Kıyafeti Kaydet"
+    },
+    "shopTheLook": {
+      "title": "Görünümü Satın Al",
+      "subtitle": "Kıyafetinizi tamamlamak için benzer parçalar bulun",
+      "filters": "Filtreler",
+      "priceRange": "Fiyat Aralığı",
+      "brand": "Marka",
+      "retailer": "Mağaza",
+      "lockedMessage": "Daha fazla ürün görmek için yükseltin"
+    },
+    "productDetail": {
+      "title": "Ürün Detayları",
+      "price": "Fiyat",
+      "brand": "Marka",
+      "retailer": "Satıcı",
+      "sizes": "Bedenler",
+      "colors": "Renkler",
+      "viewOnSite": "Mağaza Sitesinde Gör",
+      "addToFavorites": "Favorilere Ekle",
+      "affiliateDisclosure": "Satın alımlardan komisyon kazanabiliriz"
+    },
+    "share": {
+      "title": "Sonuçlarınızı Paylaşın",
+      "subtitle": "Stil analizinizi gösterin",
+      "cardTitle": "StyleAdvisor Puanım",
+      "shareButton": "Paylaş",
+      "downloadButton": "Görseli Kaydet",
+      "platforms": {
+        "instagram": "Instagram",
+        "twitter": "Twitter",
+        "facebook": "Facebook",
+        "copy": "Bağlantıyı Kopyala"
+      }
+    }
+  },
+  "wardrobe": {
+    "home": {
+      "title": "Dolabım",
+      "subtitle": "Dijital gardırobunuz",
+      "addItem": "Parça Ekle",
+      "empty": "Dolabınız boş",
+      "emptySubtitle": "Dijital gardırobunuzu oluşturmak için parça eklemeye başlayın",
+      "categories": {
+        "all": "Tümü",
+        "tops": "Üstler",
+        "bottoms": "Altlar",
+        "dresses": "Elbiseler",
+        "outerwear": "Dış Giyim",
+        "shoes": "Ayakkabılar",
+        "accessories": "Aksesuarlar",
+        "bags": "Çantalar",
+        "jewelry": "Takılar"
+      },
+      "stats": {
+        "totalItems": "Toplam Parça",
+        "categories": "Kategori",
+        "favorites": "Favori"
+      }
+    },
+    "addItem": {
+      "title": "Dolaba Ekle",
+      "photoLabel": "Parça Fotoğrafı",
+      "takePhoto": "Fotoğraf Çek",
+      "choosePhoto": "Galeriden Seç",
+      "nameLabel": "Parça Adı",
+      "namePlaceholder": "Örn: Mavi Denim Ceket",
+      "categoryLabel": "Kategori",
+      "colorLabel": "Ana Renk",
+      "brandLabel": "Marka (isteğe bağlı)",
+      "brandPlaceholder": "Örn: Zara, H&M",
+      "priceLabel": "Fiyat (isteğe bağlı)",
+      "notesLabel": "Notlar (isteğe bağlı)",
+      "notesPlaceholder": "Ek notlar...",
+      "saveButton": "Dolaba Ekle",
+      "success": "Parça dolaba eklendi!"
+    },
+    "itemDetail": {
+      "title": "Parça Detayları",
+      "wornTimes": "{{count}} kez giyildi",
+      "lastWorn": "Son giyim: {{date}}",
+      "neverWorn": "Henüz giyilmedi",
+      "markAsWorn": "Giyildi Olarak İşaretle",
+      "editItem": "Parçayı Düzenle",
+      "deleteItem": "Parçayı Sil",
+      "deleteConfirm": "Bu parçayı silmek istediğinizden emin misiniz?"
+    }
+  },
+  "favorites": {
+    "home": {
+      "title": "Favoriler",
+      "tabs": {
+        "outfits": "Kıyafetler",
+        "products": "Ürünler"
+      },
+      "emptyOutfits": "Henüz favori kıyafet yok",
+      "emptyOutfitsSubtitle": "Analizlerinizden kıyafetleri kaydedin",
+      "emptyProducts": "Henüz favori ürün yok",
+      "emptyProductsSubtitle": "Alışveriş yaparken ürünleri kaydedin"
+    }
+  },
+  "profile": {
+    "home": {
+      "title": "Profil",
+      "editProfile": "Profili Düzenle",
+      "sections": {
+        "style": "Stil Profili",
+        "subscription": "Abonelik",
+        "settings": "Ayarlar",
+        "help": "Yardım ve Destek",
+        "legal": "Yasal"
+      },
+      "menuItems": {
+        "styleProfile": "Stil Tercihleri",
+        "subscription": "Aboneliği Yönet",
+        "settings": "Uygulama Ayarları",
+        "help": "Yardım ve SSS",
+        "reportIssue": "Sorun Bildir",
+        "terms": "Kullanım Koşulları",
+        "privacy": "Gizlilik Politikası",
+        "affiliate": "Ortaklık Açıklaması",
+        "deleteAccount": "Hesabı Sil",
+        "exportData": "Verilerimi Dışa Aktar",
+        "logout": "Çıkış Yap"
+      }
+    },
+    "styleProfile": {
+      "title": "Stil Profili",
+      "subtitle": "Stil tercihlerinizi güncelleyin"
+    },
+    "subscription": {
+      "title": "Abonelik",
+      "currentPlan": "Mevcut Plan",
+      "plans": {
+        "free": "Ücretsiz",
+        "monthly": "Premium Aylık",
+        "yearly": "Premium Yıllık",
+        "lifetime": "Premium Ömür Boyu"
+      },
+      "features": "Özellikleriniz",
+      "analysisRemaining": "Bugün {{count}} analiz hakkınız kaldı",
+      "unlimited": "Sınırsız analiz",
+      "managePlan": "Planı Yönet",
+      "upgradePlan": "Planı Yükselt"
+    },
+    "settings": {
+      "title": "Ayarlar",
+      "appearance": "Görünüm",
+      "theme": "Tema",
+      "themeOptions": {
+        "light": "Açık",
+        "dark": "Koyu",
+        "system": "Sistem"
+      },
+      "language": "Dil",
+      "languages": {
+        "en": "English",
+        "tr": "Türkçe"
+      },
+      "notifications": "Bildirimler",
+      "notificationTypes": {
+        "push": "Anlık Bildirimler",
+        "email": "E-posta Bildirimleri",
+        "dailyOutfit": "Günlük Kıyafet Fikirleri",
+        "deals": "Fırsatlar ve Promosyonlar"
+      }
+    },
+    "help": {
+      "title": "Yardım ve SSS",
+      "searchPlaceholder": "Yardım ara...",
+      "categories": {
+        "gettingStarted": "Başlarken",
+        "analysis": "Stil Analizi",
+        "wardrobe": "Dolap",
+        "subscription": "Abonelik ve Faturalandırma",
+        "account": "Hesap"
+      },
+      "contactSupport": "Destek ile İletişim"
+    },
+    "reportIssue": {
+      "title": "Sorun Bildir",
+      "subtitle": "Uygulamayı geliştirmemize yardımcı olun",
+      "typeLabel": "Sorun Türü",
+      "types": {
+        "bug": "Hata / Sorun",
+        "feature": "Özellik İsteği",
+        "feedback": "Genel Geri Bildirim",
+        "other": "Diğer"
+      },
+      "descriptionLabel": "Açıklama",
+      "descriptionPlaceholder": "Lütfen sorunu detaylı olarak açıklayın...",
+      "submitButton": "Raporu Gönder",
+      "success": "Geri bildiriminiz için teşekkürler!"
+    },
+    "deleteAccount": {
+      "title": "Hesabı Sil",
+      "warning": "Bu işlem geri alınamaz",
+      "description": "Hesabınızı silmek, dolap, favoriler ve analiz geçmişi dahil tüm verilerinizi kalıcı olarak kaldıracaktır.",
+      "confirmLabel": "Onaylamak için SİL yazın",
+      "deleteButton": "Hesabımı Sil",
+      "cancel": "İptal"
+    },
+    "exportData": {
+      "title": "Verilerimi Dışa Aktar",
+      "description": "Profil, dolap, favoriler ve analiz geçmişi dahil tüm verilerinizin bir kopyasını indirin.",
+      "exportButton": "Veri Dışa Aktarımı İste",
+      "processing": "Verileriniz hazırlanıyor...",
+      "success": "Veri dışa aktarımınız hazır!",
+      "downloadButton": "İndir"
+    }
+  },
+  "premium": {
+    "paywall": {
+      "title": "Tam Stil Potansiyelinizi Açın",
+      "subtitle": "Tüm özelliklere sınırsız erişim elde edin",
+      "features": {
+        "unlimitedAnalyses": "Sınırsız Stil Analizi",
+        "allSuggestions": "Tüm Kıyafet Önerileri",
+        "advancedInsights": "Gelişmiş Stil Bilgileri",
+        "prioritySupport": "Öncelikli Destek",
+        "exclusiveContent": "Özel Moda İçerikleri",
+        "noAds": "Reklamsız Deneyim"
+      },
+      "plans": {
+        "monthly": {
+          "title": "Aylık",
+          "price": "₺249.99/ay",
+          "description": "Aylık faturalandırma"
+        },
+        "yearly": {
+          "title": "Yıllık",
+          "price": "₺1999.99/yıl",
+          "description": "%33 Tasarruf",
+          "badge": "En İyi Değer"
+        }
+      },
+      "continueButton": "Devam Et",
+      "restorePurchases": "Satın Alımları Geri Yükle",
+      "termsNote": "Abone olarak Koşullar ve Gizlilik Politikamızı kabul edersiniz"
+    },
+    "checkout": {
+      "title": "Satın Alımı Tamamla",
+      "selectedPlan": "Seçili Plan",
+      "total": "Toplam",
+      "payButton": "Şimdi Abone Ol",
+      "securePayment": "Apple/Google tarafından desteklenen güvenli ödeme"
+    },
+    "success": {
+      "title": "Premium'a Hoş Geldiniz!",
+      "subtitle": "Artık tüm özelliklere erişiminiz var",
+      "features": "Premium Özellikleriniz",
+      "startButton": "Keşfetmeye Başla"
+    },
+    "limitReached": {
+      "title": "Günlük Limit Doldu",
+      "message": "Bugünkü ücretsiz analizinizi kullandınız",
+      "upgradeButton": "Premium'a Yükselt",
+      "waitMessage": "Veya başka bir ücretsiz analiz için yarını bekleyin"
+    }
+  },
+  "legal": {
+    "terms": {
+      "title": "Kullanım Koşulları"
+    },
+    "privacy": {
+      "title": "Gizlilik Politikası"
+    },
+    "affiliate": {
+      "title": "Ortaklık Açıklaması",
+      "content": "StyleAdvisor AI ortaklık programlarına katılmaktadır. Bağlantılarımız aracılığıyla ürün satın aldığınızda, size ekstra maliyet olmadan komisyon kazanabiliriz."
+    }
+  },
+  "errors": {
+    "network": "Ağ hatası. Lütfen bağlantınızı kontrol edin.",
+    "server": "Sunucu hatası. Lütfen daha sonra tekrar deneyin.",
+    "unknown": "Beklenmeyen bir hata oluştu.",
+    "unauthorized": "Devam etmek için lütfen giriş yapın.",
+    "notFound": "İstenen kaynak bulunamadı.",
+    "validation": "Lütfen girdinizi kontrol edip tekrar deneyin."
+  },
+  "tabs": {
+    "home": "Ana Sayfa",
+    "analyze": "Analiz",
+    "wardrobe": "Dolap",
+    "favorites": "Favoriler",
+    "profile": "Profil"
+  }
+}

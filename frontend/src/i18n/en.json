@@ -1,0 +1,616 @@
+{
+  "common": {
+    "appName": "StyleAdvisor AI",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "done": "Done",
+    "next": "Next",
+    "back": "Back",
+    "skip": "Skip",
+    "continue": "Continue",
+    "confirm": "Confirm",
+    "close": "Close",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "share": "Share",
+    "favorite": "Favorite",
+    "unfavorite": "Remove from favorites",
+    "seeAll": "See All",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "yes": "Yes",
+    "no": "No",
+    "or": "or",
+    "and": "and",
+    "offline": "You are offline",
+    "noResults": "No results found",
+    "emptyList": "Nothing here yet"
+  },
+  "auth": {
+    "welcome": {
+      "title": "Your Personal AI Fashion Stylist",
+      "subtitle": "Get personalized outfit recommendations, style analysis, and shopping suggestions powered by AI",
+      "loginButton": "Log In",
+      "registerButton": "Create Account"
+    },
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Sign in to continue your style journey",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Enter your email",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "forgotPassword": "Forgot Password?",
+      "loginButton": "Log In",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign Up",
+      "orContinueWith": "Or continue with",
+      "apple": "Continue with Apple",
+      "google": "Continue with Google",
+      "invalidCredentials": "Invalid email or password",
+      "success": "Welcome back!"
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Start your personalized style journey",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Enter your email",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Create a password",
+      "confirmPasswordLabel": "Confirm Password",
+      "confirmPasswordPlaceholder": "Confirm your password",
+      "termsAgreement": "By creating an account, you agree to our",
+      "termsLink": "Terms of Service",
+      "privacyLink": "Privacy Policy",
+      "registerButton": "Create Account",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign In",
+      "passwordMismatch": "Passwords do not match",
+      "success": "Account created successfully!"
+    },
+    "forgotPassword": {
+      "title": "Reset Password",
+      "subtitle": "Enter your email and we'll send you a reset link",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Enter your email",
+      "sendButton": "Send Reset Link",
+      "backToLogin": "Back to Login",
+      "success": "Reset link sent to your email",
+      "emailNotFound": "Email not found"
+    },
+    "termsGate": {
+      "title": "Terms & Privacy",
+      "subtitle": "Please review and accept our terms to continue",
+      "termsTitle": "Terms of Service",
+      "privacyTitle": "Privacy Policy",
+      "acceptTerms": "I accept the Terms of Service",
+      "acceptPrivacy": "I accept the Privacy Policy",
+      "continueButton": "Continue",
+      "mustAccept": "You must accept both to continue"
+    }
+  },
+  "onboarding": {
+    "profile": {
+      "title": "Let's Get to Know You",
+      "subtitle": "Help us personalize your experience",
+      "genderLabel": "How do you identify?",
+      "genderOptions": {
+        "male": "Male",
+        "female": "Female",
+        "nonBinary": "Non-binary",
+        "preferNot": "Prefer not to say"
+      },
+      "ageLabel": "Age (optional)",
+      "agePlaceholder": "Enter your age"
+    },
+    "bodyInfo": {
+      "title": "Body Information",
+      "subtitle": "This helps us suggest better fitting clothes",
+      "heightLabel": "Height",
+      "weightLabel": "Weight",
+      "bodyTypeLabel": "Body Type",
+      "bodyTypes": {
+        "slim": "Slim",
+        "athletic": "Athletic",
+        "average": "Average",
+        "curvy": "Curvy",
+        "plusSize": "Plus Size"
+      },
+      "skinToneLabel": "Skin Tone",
+      "skinTones": {
+        "fair": "Fair",
+        "light": "Light",
+        "medium": "Medium",
+        "tan": "Tan",
+        "dark": "Dark",
+        "deep": "Deep"
+      }
+    },
+    "stylePreferences": {
+      "title": "Your Style",
+      "subtitle": "Select styles that resonate with you",
+      "styles": {
+        "casual": "Casual",
+        "formal": "Formal",
+        "streetwear": "Streetwear",
+        "bohemian": "Bohemian",
+        "minimalist": "Minimalist",
+        "vintage": "Vintage",
+        "sporty": "Sporty",
+        "elegant": "Elegant",
+        "edgy": "Edgy",
+        "preppy": "Preppy"
+      },
+      "favoriteColorsLabel": "Favorite Colors",
+      "avoidColorsLabel": "Colors to Avoid"
+    },
+    "budget": {
+      "title": "Budget & Shopping",
+      "subtitle": "Set your preferences for recommendations",
+      "budgetLabel": "Monthly Fashion Budget",
+      "budgetRange": "{{min}} - {{max}} {{currency}}",
+      "retailersLabel": "Preferred Retailers",
+      "retailersSubtitle": "We'll prioritize products from these stores"
+    },
+    "notifications": {
+      "title": "Stay Updated",
+      "subtitle": "Get notified about new outfit ideas and deals",
+      "enableButton": "Enable Notifications",
+      "skipButton": "Maybe Later",
+      "types": {
+        "dailyOutfit": "Daily Outfit Ideas",
+        "deals": "Deals & Discounts",
+        "trends": "Trending Styles",
+        "reminders": "Wardrobe Reminders"
+      }
+    },
+    "complete": {
+      "title": "You're All Set!",
+      "subtitle": "Your personalized style journey begins now",
+      "startButton": "Start Exploring",
+      "features": {
+        "analyze": "Analyze your outfits with AI",
+        "suggestions": "Get personalized suggestions",
+        "wardrobe": "Build your digital wardrobe",
+        "shop": "Shop curated recommendations"
+      }
+    }
+  },
+  "home": {
+    "greeting": "Hello, {{name}}",
+    "greetingDefault": "Hello there",
+    "subtitle": "What would you like to do today?",
+    "quickActions": {
+      "title": "Quick Actions",
+      "analyze": "Analyze Outfit",
+      "wardrobe": "My Wardrobe",
+      "trends": "Trending",
+      "favorites": "Favorites"
+    },
+    "dailyOutfit": {
+      "title": "Today's Outfit Idea",
+      "viewDetails": "View Details",
+      "refresh": "Get New Idea"
+    },
+    "promptChips": {
+      "title": "Try asking...",
+      "work": "What to wear to work?",
+      "date": "Date night outfit",
+      "casual": "Casual weekend look",
+      "formal": "Formal event attire",
+      "weather": "What to wear today?"
+    },
+    "trends": {
+      "title": "Trending Now",
+      "seeAll": "See All"
+    },
+    "recentAnalyses": {
+      "title": "Recent Analyses",
+      "empty": "No analyses yet",
+      "startFirst": "Start your first analysis"
+    }
+  },
+  "analyze": {
+    "start": {
+      "title": "Analyze Your Style",
+      "subtitle": "Get AI-powered feedback on your outfit",
+      "photoOption": "Take or Upload Photo",
+      "photoDescription": "Get visual analysis of your outfit",
+      "textOption": "Describe Your Outfit",
+      "textDescription": "Tell us what you're wearing",
+      "recentTitle": "Recent Analyses"
+    },
+    "photoCapture": {
+      "title": "Capture Your Outfit",
+      "instructions": "Stand in good lighting and capture your full outfit",
+      "takePhoto": "Take Photo",
+      "chooseFromGallery": "Choose from Gallery",
+      "permissionTitle": "Camera Permission Required",
+      "permissionMessage": "We need camera access to capture your outfit photos",
+      "grantPermission": "Grant Permission"
+    },
+    "photoPicker": {
+      "title": "Select Photo",
+      "selectFromGallery": "Select from Gallery",
+      "permissionTitle": "Gallery Permission Required",
+      "permissionMessage": "We need gallery access to select your outfit photos"
+    },
+    "textRequest": {
+      "title": "Describe Your Outfit",
+      "subtitle": "Tell us what you're wearing or planning to wear",
+      "placeholder": "E.g., I'm wearing a navy blue blazer with white shirt, khaki pants, and brown loafers. Going to a business casual meeting...",
+      "occasionLabel": "Occasion",
+      "occasionPlaceholder": "Select occasion",
+      "occasions": {
+        "work": "Work / Office",
+        "casual": "Casual",
+        "date": "Date Night",
+        "formal": "Formal Event",
+        "party": "Party",
+        "wedding": "Wedding",
+        "interview": "Job Interview",
+        "travel": "Travel",
+        "workout": "Workout",
+        "other": "Other"
+      },
+      "analyzeButton": "Analyze My Outfit"
+    },
+    "review": {
+      "title": "Review Your Request",
+      "subtitle": "Make sure everything looks good",
+      "photoLabel": "Your Photo",
+      "descriptionLabel": "Your Description",
+      "occasionLabel": "Occasion",
+      "editButton": "Edit",
+      "submitButton": "Get Analysis"
+    },
+    "processing": {
+      "title": "Analyzing Your Style",
+      "steps": {
+        "uploading": "Processing image...",
+        "analyzing": "Analyzing colors and patterns...",
+        "matching": "Finding style matches...",
+        "generating": "Generating recommendations..."
+      },
+      "tip": "This usually takes 10-15 seconds"
+    },
+    "result": {
+      "title": "Your Style Analysis",
+      "overallScore": "Overall Score",
+      "scoreLabels": {
+        "excellent": "Excellent",
+        "good": "Good",
+        "average": "Average",
+        "needsWork": "Needs Work"
+      },
+      "sections": {
+        "colorHarmony": "Color Harmony",
+        "fitAssessment": "Fit Assessment",
+        "styleCoherence": "Style Coherence",
+        "occasionMatch": "Occasion Match"
+      },
+      "improvements": "Improvements",
+      "outfitSuggestions": "Outfit Suggestions",
+      "shopTheLook": "Shop the Look",
+      "shareResult": "Share Result",
+      "saveToFavorites": "Save to Favorites",
+      "premiumLocked": "Unlock with Premium"
+    },
+    "improvements": {
+      "title": "Style Improvements",
+      "subtitle": "Here's how you can enhance your look",
+      "priority": {
+        "high": "High Priority",
+        "medium": "Medium Priority",
+        "low": "Nice to Have"
+      },
+      "markComplete": "Mark as Done"
+    },
+    "outfitSuggestions": {
+      "title": "Outfit Suggestions",
+      "subtitle": "Based on your style and preferences",
+      "viewDetails": "View Details",
+      "shopThis": "Shop This Look",
+      "lockedMessage": "Upgrade to Premium to see more suggestions"
+    },
+    "outfitDetail": {
+      "title": "Outfit Details",
+      "items": "Items in this outfit",
+      "totalPrice": "Total Price",
+      "shopAll": "Shop All Items",
+      "saveOutfit": "Save Outfit"
+    },
+    "shopTheLook": {
+      "title": "Shop the Look",
+      "subtitle": "Find similar items to complete your outfit",
+      "filters": "Filters",
+      "priceRange": "Price Range",
+      "brand": "Brand",
+      "retailer": "Retailer",
+      "lockedMessage": "Upgrade to see more products"
+    },
+    "productDetail": {
+      "title": "Product Details",
+      "price": "Price",
+      "brand": "Brand",
+      "retailer": "Available at",
+      "sizes": "Sizes",
+      "colors": "Colors",
+      "viewOnSite": "View on Retailer Site",
+      "addToFavorites": "Add to Favorites",
+      "affiliateDisclosure": "We may earn a commission from purchases"
+    },
+    "share": {
+      "title": "Share Your Results",
+      "subtitle": "Show off your style analysis",
+      "cardTitle": "My StyleAdvisor Score",
+      "shareButton": "Share",
+      "downloadButton": "Save Image",
+      "platforms": {
+        "instagram": "Instagram",
+        "twitter": "Twitter",
+        "facebook": "Facebook",
+        "copy": "Copy Link"
+      }
+    }
+  },
+  "wardrobe": {
+    "home": {
+      "title": "My Wardrobe",
+      "subtitle": "Your digital closet",
+      "addItem": "Add Item",
+      "empty": "Your wardrobe is empty",
+      "emptySubtitle": "Start adding items to build your digital closet",
+      "categories": {
+        "all": "All",
+        "tops": "Tops",
+        "bottoms": "Bottoms",
+        "dresses": "Dresses",
+        "outerwear": "Outerwear",
+        "shoes": "Shoes",
+        "accessories": "Accessories",
+        "bags": "Bags",
+        "jewelry": "Jewelry"
+      },
+      "stats": {
+        "totalItems": "Total Items",
+        "categories": "Categories",
+        "favorites": "Favorites"
+      }
+    },
+    "addItem": {
+      "title": "Add to Wardrobe",
+      "photoLabel": "Item Photo",
+      "takePhoto": "Take Photo",
+      "choosePhoto": "Choose from Gallery",
+      "nameLabel": "Item Name",
+      "namePlaceholder": "E.g., Blue Denim Jacket",
+      "categoryLabel": "Category",
+      "colorLabel": "Primary Color",
+      "brandLabel": "Brand (optional)",
+      "brandPlaceholder": "E.g., Zara, H&M",
+      "priceLabel": "Price (optional)",
+      "notesLabel": "Notes (optional)",
+      "notesPlaceholder": "Any additional notes...",
+      "saveButton": "Add to Wardrobe",
+      "success": "Item added to wardrobe!"
+    },
+    "itemDetail": {
+      "title": "Item Details",
+      "wornTimes": "Worn {{count}} times",
+      "lastWorn": "Last worn: {{date}}",
+      "neverWorn": "Never worn yet",
+      "markAsWorn": "Mark as Worn",
+      "editItem": "Edit Item",
+      "deleteItem": "Delete Item",
+      "deleteConfirm": "Are you sure you want to delete this item?"
+    }
+  },
+  "favorites": {
+    "home": {
+      "title": "Favorites",
+      "tabs": {
+        "outfits": "Outfits",
+        "products": "Products"
+      },
+      "emptyOutfits": "No favorite outfits yet",
+      "emptyOutfitsSubtitle": "Save outfits from your analyses",
+      "emptyProducts": "No favorite products yet",
+      "emptyProductsSubtitle": "Save products while shopping"
+    }
+  },
+  "profile": {
+    "home": {
+      "title": "Profile",
+      "editProfile": "Edit Profile",
+      "sections": {
+        "style": "Style Profile",
+        "subscription": "Subscription",
+        "settings": "Settings",
+        "help": "Help & Support",
+        "legal": "Legal"
+      },
+      "menuItems": {
+        "styleProfile": "Style Preferences",
+        "subscription": "Manage Subscription",
+        "settings": "App Settings",
+        "help": "Help & FAQ",
+        "reportIssue": "Report an Issue",
+        "terms": "Terms of Use",
+        "privacy": "Privacy Policy",
+        "affiliate": "Affiliate Disclosure",
+        "deleteAccount": "Delete Account",
+        "exportData": "Export My Data",
+        "logout": "Log Out"
+      }
+    },
+    "styleProfile": {
+      "title": "Style Profile",
+      "subtitle": "Update your style preferences"
+    },
+    "subscription": {
+      "title": "Subscription",
+      "currentPlan": "Current Plan",
+      "plans": {
+        "free": "Free",
+        "monthly": "Premium Monthly",
+        "yearly": "Premium Yearly",
+        "lifetime": "Premium Lifetime"
+      },
+      "features": "Your Features",
+      "analysisRemaining": "{{count}} analyses remaining today",
+      "unlimited": "Unlimited analyses",
+      "managePlan": "Manage Plan",
+      "upgradePlan": "Upgrade Plan"
+    },
+    "settings": {
+      "title": "Settings",
+      "appearance": "Appearance",
+      "theme": "Theme",
+      "themeOptions": {
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
+      },
+      "language": "Language",
+      "languages": {
+        "en": "English",
+        "tr": "Türkçe"
+      },
+      "notifications": "Notifications",
+      "notificationTypes": {
+        "push": "Push Notifications",
+        "email": "Email Notifications",
+        "dailyOutfit": "Daily Outfit Ideas",
+        "deals": "Deals & Promotions"
+      }
+    },
+    "help": {
+      "title": "Help & FAQ",
+      "searchPlaceholder": "Search for help...",
+      "categories": {
+        "gettingStarted": "Getting Started",
+        "analysis": "Style Analysis",
+        "wardrobe": "Wardrobe",
+        "subscription": "Subscription & Billing",
+        "account": "Account"
+      },
+      "contactSupport": "Contact Support"
+    },
+    "reportIssue": {
+      "title": "Report an Issue",
+      "subtitle": "Help us improve the app",
+      "typeLabel": "Issue Type",
+      "types": {
+        "bug": "Bug / Error",
+        "feature": "Feature Request",
+        "feedback": "General Feedback",
+        "other": "Other"
+      },
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "Please describe the issue in detail...",
+      "submitButton": "Submit Report",
+      "success": "Thank you for your feedback!"
+    },
+    "deleteAccount": {
+      "title": "Delete Account",
+      "warning": "This action cannot be undone",
+      "description": "Deleting your account will permanently remove all your data, including your wardrobe, favorites, and analysis history.",
+      "confirmLabel": "Type DELETE to confirm",
+      "deleteButton": "Delete My Account",
+      "cancel": "Cancel"
+    },
+    "exportData": {
+      "title": "Export My Data",
+      "description": "Download a copy of all your data including your profile, wardrobe, favorites, and analysis history.",
+      "exportButton": "Request Data Export",
+      "processing": "Preparing your data...",
+      "success": "Your data export is ready!",
+      "downloadButton": "Download"
+    }
+  },
+  "premium": {
+    "paywall": {
+      "title": "Unlock Your Full Style Potential",
+      "subtitle": "Get unlimited access to all features",
+      "features": {
+        "unlimitedAnalyses": "Unlimited Style Analyses",
+        "allSuggestions": "All Outfit Suggestions",
+        "advancedInsights": "Advanced Style Insights",
+        "prioritySupport": "Priority Support",
+        "exclusiveContent": "Exclusive Fashion Content",
+        "noAds": "Ad-Free Experience"
+      },
+      "plans": {
+        "monthly": {
+          "title": "Monthly",
+          "price": "$9.99/month",
+          "description": "Billed monthly"
+        },
+        "yearly": {
+          "title": "Yearly",
+          "price": "$79.99/year",
+          "description": "Save 33%",
+          "badge": "Best Value"
+        }
+      },
+      "continueButton": "Continue",
+      "restorePurchases": "Restore Purchases",
+      "termsNote": "By subscribing, you agree to our Terms and Privacy Policy"
+    },
+    "checkout": {
+      "title": "Complete Purchase",
+      "selectedPlan": "Selected Plan",
+      "total": "Total",
+      "payButton": "Subscribe Now",
+      "securePayment": "Secure payment powered by Apple/Google"
+    },
+    "success": {
+      "title": "Welcome to Premium!",
+      "subtitle": "You now have access to all features",
+      "features": "Your Premium Features",
+      "startButton": "Start Exploring"
+    },
+    "limitReached": {
+      "title": "Daily Limit Reached",
+      "message": "You've used your free analysis for today",
+      "upgradeButton": "Upgrade to Premium",
+      "waitMessage": "Or wait until tomorrow for another free analysis"
+    }
+  },
+  "legal": {
+    "terms": {
+      "title": "Terms of Use"
+    },
+    "privacy": {
+      "title": "Privacy Policy"
+    },
+    "affiliate": {
+      "title": "Affiliate Disclosure",
+      "content": "StyleAdvisor AI participates in affiliate programs. When you purchase products through our links, we may earn a commission at no extra cost to you."
+    }
+  },
+  "errors": {
+    "network": "Network error. Please check your connection.",
+    "server": "Server error. Please try again later.",
+    "unknown": "An unexpected error occurred.",
+    "unauthorized": "Please log in to continue.",
+    "notFound": "The requested resource was not found.",
+    "validation": "Please check your input and try again."
+  },
+  "tabs": {
+    "home": "Home",
+    "analyze": "Analyze",
+    "wardrobe": "Wardrobe",
+    "favorites": "Favorites",
+    "profile": "Profile"
+  }
+}
