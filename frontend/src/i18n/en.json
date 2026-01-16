@@ -425,7 +425,13 @@
       "emptyOutfitsSubtitle": "Save outfits from your analyses",
       "emptyProducts": "No favorite products yet",
       "emptyProductsSubtitle": "Save products while shopping"
-    }
+    },
+    "outfitDetail": "Outfit Details",
+    "productDetail": "Product Details",
+    "outfitItems": "Items in This Outfit",
+    "totalPrice": "Total Price",
+    "removedFromFavorites": "Removed from favorites",
+    "openingStore": "Opening store..."
   },
   "profile": {
     "home": {
