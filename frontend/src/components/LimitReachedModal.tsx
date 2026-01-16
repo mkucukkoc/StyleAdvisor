@@ -5,7 +5,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Modal, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { useTheme } from '../../theme/ThemeContext';
+import { useTheme } from '../theme/ThemeContext';
 import { useUIStore } from '../../stores';
 import { useRouter } from 'expo-router';
 import Button from './Button';

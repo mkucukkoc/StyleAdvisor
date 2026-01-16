@@ -13,7 +13,7 @@ import {
   TextInputProps,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { useTheme } from '../../theme/ThemeContext';
+import { useTheme } from '../theme/ThemeContext';
 
 interface InputProps extends TextInputProps {
   label?: string;

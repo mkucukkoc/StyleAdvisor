@@ -6,7 +6,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { BlurView } from 'expo-blur';
 import { Ionicons } from '@expo/vector-icons';
-import { useTheme } from '../../theme/ThemeContext';
+import { useTheme } from '../theme/ThemeContext';
 import { useRouter } from 'expo-router';
 
 interface PremiumLockOverlayProps {
