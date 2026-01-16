@@ -1,0 +1,433 @@
+// ============================================================
+// StyleAdvisor AI - Mock Data
+// ============================================================
+
+import {
+  User,
+  UserProfile,
+  AnalysisResult,
+  Outfit,
+  OutfitItem,
+  Product,
+  WardrobeItem,
+  SubscriptionStatus,
+  Improvement,
+} from '../../types';
+
+// Helper to generate IDs
+const generateId = () => Math.random().toString(36).substring(2, 15);
+
+// Mock User
+export const mockUser: User = {
+  id: 'user-1',
+  email: 'demo@styleadvisor.ai',
+  name: 'Alex Style',
+  createdAt: new Date().toISOString(),
+};
+
+// Mock User Profile
+export const mockUserProfile: UserProfile = {
+  id: 'profile-1',
+  userId: 'user-1',
+  gender: 'female',
+  age: 28,
+  height: 165,
+  weight: 58,
+  bodyType: 'average',
+  skinTone: 'medium',
+  stylePreferences: [
+    { id: '1', name: 'Minimalist', icon: 'square-outline', selected: true },
+    { id: '2', name: 'Elegant', icon: 'sparkles', selected: true },
+    { id: '3', name: 'Casual', icon: 'sunny-outline', selected: false },
+  ],
+  favoriteColors: ['#1E3A5F', '#FFFFFF', '#D4AF37'],
+  avoidColors: ['#FF6B6B', '#32CD32'],
+  budgetRange: { min: 50, max: 300, currency: 'USD' },
+  preferredRetailers: ['Zara', 'H&M', 'Mango', 'COS'],
+  notificationsEnabled: true,
+  onboardingCompleted: true,
+};
+
+// Mock Outfit Items
+export const mockOutfitItems: OutfitItem[] = [
+  {
+    id: 'item-1',
+    name: 'Silk Blouse',
+    category: 'Tops',
+    color: '#FFFFF0',
+    price: 89,
+    brand: 'COS',
+    retailer: 'COS',
+    affiliateUrl: 'https://example.com/item1',
+  },
+  {
+    id: 'item-2',
+    name: 'High-Waisted Trousers',
+    category: 'Bottoms',
+    color: '#1E3A5F',
+    price: 129,
+    brand: 'Massimo Dutti',
+    retailer: 'Massimo Dutti',
+    affiliateUrl: 'https://example.com/item2',
+  },
+  {
+    id: 'item-3',
+    name: 'Leather Loafers',
+    category: 'Shoes',
+    color: '#8B4513',
+    price: 179,
+    brand: 'Mango',
+    retailer: 'Mango',
+    affiliateUrl: 'https://example.com/item3',
+  },
+  {
+    id: 'item-4',
+    name: 'Structured Blazer',
+    category: 'Outerwear',
+    color: '#2F4F4F',
+    price: 199,
+    brand: 'Zara',
+    retailer: 'Zara',
+    affiliateUrl: 'https://example.com/item4',
+  },
+];
+
+// Mock Outfits
+export const mockOutfits: Outfit[] = [
+  {
+    id: 'outfit-1',
+    name: 'Sophisticated Office Look',
+    description: 'A polished ensemble perfect for business meetings and professional settings.',
+    items: mockOutfitItems.slice(0, 3),
+    occasion: 'Work',
+    style: 'Elegant',
+    season: 'All Season',
+    totalPrice: 397,
+    isPremiumLocked: false,
+    isFavorite: false,
+  },
+  {
+    id: 'outfit-2',
+    name: 'Weekend Brunch Style',
+    description: 'Effortlessly chic for casual outings with friends.',
+    items: mockOutfitItems.slice(1, 4),
+    occasion: 'Casual',
+    style: 'Minimalist',
+    season: 'Spring',
+    totalPrice: 507,
+    isPremiumLocked: false,
+    isFavorite: true,
+  },
+  {
+    id: 'outfit-3',
+    name: 'Evening Elegance',
+    description: 'Stand out at dinner parties and special events.',
+    items: mockOutfitItems,
+    occasion: 'Evening',
+    style: 'Elegant',
+    season: 'Fall',
+    totalPrice: 596,
+    isPremiumLocked: true,
+    isFavorite: false,
+  },
+  {
+    id: 'outfit-4',
+    name: 'Creative Professional',
+    description: 'Express your style while maintaining professionalism.',
+    items: mockOutfitItems.slice(0, 2),
+    occasion: 'Work',
+    style: 'Minimalist',
+    season: 'All Season',
+    totalPrice: 218,
+    isPremiumLocked: true,
+    isFavorite: false,
+  },
+  {
+    id: 'outfit-5',
+    name: 'Date Night Glamour',
+    description: 'Make a lasting impression on special evenings.',
+    items: mockOutfitItems,
+    occasion: 'Date',
+    style: 'Elegant',
+    season: 'All Season',
+    totalPrice: 596,
+    isPremiumLocked: true,
+    isFavorite: false,
+  },
+];
+
+// Mock Improvements
+export const mockImprovements: Improvement[] = [
+  {
+    id: 'imp-1',
+    title: 'Add a Statement Accessory',
+    description: 'A gold bracelet or delicate necklace would elevate your look.',
+    priority: 'high',
+    completed: false,
+  },
+  {
+    id: 'imp-2',
+    title: 'Consider Shoe Color',
+    description: 'Brown shoes work, but black would create more contrast.',
+    priority: 'medium',
+    completed: false,
+  },
+  {
+    id: 'imp-3',
+    title: 'Layer Opportunity',
+    description: 'A structured blazer would complete this outfit perfectly.',
+    priority: 'low',
+    completed: false,
+  },
+];
+
+// Mock Analysis Result
+export const mockAnalysisResult: AnalysisResult = {
+  id: 'analysis-1',
+  createdAt: new Date().toISOString(),
+  overallScore: 82,
+  colorHarmony: {
+    score: 85,
+    label: 'Excellent',
+    description: 'Your color combination shows great harmony with complementary tones.',
+    isPremiumLocked: false,
+  },
+  fitAssessment: {
+    score: 78,
+    label: 'Good',
+    description: 'Overall fit is good, but the blazer could be slightly more tailored.',
+    isPremiumLocked: true,
+  },
+  styleCoherence: {
+    score: 88,
+    label: 'Excellent',
+    description: 'Your outfit maintains a consistent elegant minimalist aesthetic.',
+    isPremiumLocked: false,
+  },
+  occasionMatch: {
+    score: 80,
+    label: 'Good',
+    description: 'Well suited for business casual environments.',
+    isPremiumLocked: false,
+  },
+  improvements: mockImprovements,
+  outfitSuggestions: mockOutfits,
+  isPremiumContent: false,
+};
+
+// Mock Products
+export const mockProducts: Product[] = [
+  {
+    id: 'prod-1',
+    name: 'Premium Silk Blouse',
+    description: 'Luxurious silk blouse with elegant draping.',
+    category: 'Tops',
+    brand: 'COS',
+    price: 89,
+    originalPrice: 129,
+    currency: 'USD',
+    retailer: 'COS',
+    affiliateUrl: 'https://example.com/prod1',
+    rating: 4.5,
+    reviewCount: 234,
+    colors: ['#FFFFF0', '#000000', '#1E3A5F'],
+    sizes: ['XS', 'S', 'M', 'L', 'XL'],
+    inStock: true,
+    isFavorite: false,
+  },
+  {
+    id: 'prod-2',
+    name: 'Tailored Wool Trousers',
+    description: 'Classic high-waisted trousers in premium wool blend.',
+    category: 'Bottoms',
+    brand: 'Massimo Dutti',
+    price: 129,
+    currency: 'USD',
+    retailer: 'Massimo Dutti',
+    affiliateUrl: 'https://example.com/prod2',
+    rating: 4.7,
+    reviewCount: 156,
+    colors: ['#1E3A5F', '#000000', '#808080'],
+    sizes: ['34', '36', '38', '40', '42'],
+    inStock: true,
+    isFavorite: true,
+  },
+  {
+    id: 'prod-3',
+    name: 'Italian Leather Loafers',
+    description: 'Handcrafted leather loafers with cushioned insole.',
+    category: 'Shoes',
+    brand: 'Mango',
+    price: 179,
+    originalPrice: 199,
+    currency: 'USD',
+    retailer: 'Mango',
+    affiliateUrl: 'https://example.com/prod3',
+    rating: 4.3,
+    reviewCount: 89,
+    colors: ['#8B4513', '#000000'],
+    sizes: ['36', '37', '38', '39', '40', '41'],
+    inStock: true,
+    isFavorite: false,
+  },
+  {
+    id: 'prod-4',
+    name: 'Oversized Wool Blazer',
+    description: 'Contemporary oversized blazer in premium wool.',
+    category: 'Outerwear',
+    brand: 'Zara',
+    price: 199,
+    currency: 'USD',
+    retailer: 'Zara',
+    affiliateUrl: 'https://example.com/prod4',
+    rating: 4.6,
+    reviewCount: 312,
+    colors: ['#2F4F4F', '#000000', '#D2B48C'],
+    sizes: ['XS', 'S', 'M', 'L'],
+    inStock: true,
+    isFavorite: false,
+  },
+  {
+    id: 'prod-5',
+    name: 'Cashmere Sweater',
+    description: 'Soft cashmere sweater for elegant layering.',
+    category: 'Tops',
+    brand: 'H&M Premium',
+    price: 149,
+    currency: 'USD',
+    retailer: 'H&M',
+    affiliateUrl: 'https://example.com/prod5',
+    rating: 4.4,
+    reviewCount: 445,
+    colors: ['#FFFFF0', '#808080', '#1E3A5F'],
+    sizes: ['XS', 'S', 'M', 'L', 'XL'],
+    inStock: true,
+    isFavorite: false,
+  },
+];
+
+// Generate more products for pagination testing
+export const generateMockProducts = (count: number): Product[] => {
+  const products: Product[] = [];
+  for (let i = 0; i < count; i++) {
+    products.push({
+      ...mockProducts[i % mockProducts.length],
+      id: `prod-gen-${i}`,
+      name: `${mockProducts[i % mockProducts.length].name} ${i + 1}`,
+    });
+  }
+  return products;
+};
+
+// Mock Wardrobe Items
+export const mockWardrobeItems: WardrobeItem[] = [
+  {
+    id: 'wardrobe-1',
+    name: 'White Linen Shirt',
+    category: 'tops',
+    color: '#FFFFFF',
+    brand: 'Uniqlo',
+    price: 49,
+    timesWorn: 12,
+    lastWorn: new Date(Date.now() - 86400000 * 3).toISOString(),
+    isFavorite: true,
+    createdAt: new Date(Date.now() - 86400000 * 60).toISOString(),
+  },
+  {
+    id: 'wardrobe-2',
+    name: 'Navy Chinos',
+    category: 'bottoms',
+    color: '#1E3A5F',
+    brand: 'Banana Republic',
+    price: 89,
+    timesWorn: 8,
+    lastWorn: new Date(Date.now() - 86400000 * 7).toISOString(),
+    isFavorite: false,
+    createdAt: new Date(Date.now() - 86400000 * 45).toISOString(),
+  },
+  {
+    id: 'wardrobe-3',
+    name: 'Black Leather Belt',
+    category: 'accessories',
+    color: '#000000',
+    brand: 'Hugo Boss',
+    price: 120,
+    timesWorn: 25,
+    isFavorite: true,
+    createdAt: new Date(Date.now() - 86400000 * 120).toISOString(),
+  },
+];
+
+// Mock Subscription Status
+export const mockFreeSubscription: SubscriptionStatus = {
+  isPremium: false,
+  plan: 'free',
+  analysisRemaining: 1,
+  analysisLimit: 1,
+  features: [
+    { id: 'basic-analysis', name: 'Basic Analysis', description: '1 per day', isAvailable: true },
+    { id: 'limited-suggestions', name: '2 Outfit Suggestions', description: 'Per analysis', isAvailable: true },
+    { id: 'unlimited-analyses', name: 'Unlimited Analyses', description: 'Analyze anytime', isAvailable: false },
+    { id: 'all-suggestions', name: 'All Suggestions', description: 'See all outfits', isAvailable: false },
+    { id: 'advanced-insights', name: 'Advanced Insights', description: 'Detailed analysis', isAvailable: false },
+  ],
+};
+
+export const mockPremiumSubscription: SubscriptionStatus = {
+  isPremium: true,
+  plan: 'monthly',
+  expiresAt: new Date(Date.now() + 86400000 * 25).toISOString(),
+  analysisRemaining: 999,
+  analysisLimit: 999,
+  features: [
+    { id: 'unlimited-analyses', name: 'Unlimited Analyses', description: 'Analyze anytime', isAvailable: true },
+    { id: 'all-suggestions', name: 'All Suggestions', description: 'See all outfits', isAvailable: true },
+    { id: 'advanced-insights', name: 'Advanced Insights', description: 'Detailed analysis', isAvailable: true },
+    { id: 'priority-support', name: 'Priority Support', description: 'Get help faster', isAvailable: true },
+    { id: 'exclusive-content', name: 'Exclusive Content', description: 'Fashion tips', isAvailable: true },
+  ],
+};
+
+// Daily outfit ideas
+export const mockDailyOutfitIdeas = [
+  {
+    id: 'daily-1',
+    title: 'Monday Power Look',
+    description: 'Start your week with confidence',
+    outfit: mockOutfits[0],
+  },
+  {
+    id: 'daily-2',
+    title: 'Casual Friday Vibes',
+    description: 'Relaxed yet professional',
+    outfit: mockOutfits[1],
+  },
+];
+
+// Trending styles
+export const mockTrends = [
+  {
+    id: 'trend-1',
+    title: 'Quiet Luxury',
+    description: 'Understated elegance is in',
+    color: '#D4AF37',
+  },
+  {
+    id: 'trend-2',
+    title: 'Earth Tones',
+    description: 'Nature-inspired palettes',
+    color: '#8B7355',
+  },
+  {
+    id: 'trend-3',
+    title: 'Minimalist Chic',
+    description: 'Less is more',
+    color: '#F5F5F5',
+  },
+  {
+    id: 'trend-4',
+    title: 'Power Suits',
+    description: 'Bold and structured',
+    color: '#1E3A5F',
+  },
+];
