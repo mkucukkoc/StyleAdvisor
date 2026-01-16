@@ -612,5 +612,95 @@
     "wardrobe": "Dolap",
     "favorites": "Favoriler",
     "profile": "Profil"
+  },
+  "legal": {
+    "terms": {
+      "title": "Kullanım Koşulları",
+      "lastUpdated": "Son Güncelleme",
+      "footer": "StyleAdvisor AI'ı kullanarak bu koşulları kabul etmiş olursunuz.",
+      "sections": {
+        "acceptance": {
+          "title": "1. Koşulların Kabulü",
+          "content": "StyleAdvisor AI'a erişerek ve kullanarak, bu Kullanım Koşulları'na bağlı olmayı kabul etmiş olursunuz. Bu koşulları kabul etmiyorsanız, lütfen hizmetimizi kullanmayın."
+        },
+        "services": {
+          "title": "2. Hizmetlerimiz",
+          "content": "StyleAdvisor AI, yapay zeka destekli moda analizi ve stil önerileri sunmaktadır. Hizmetimiz, kişiselleştirilmiş kıyafet önerileri ve alışveriş tavsiyeleri sağlamak için fotoğrafları ve metin açıklamalarını analiz eder."
+        },
+        "userContent": {
+          "title": "3. Kullanıcı İçeriği",
+          "content": "Yüklediğiniz fotoğrafların ve içeriklerin mülkiyeti size aittir. İçerik yükleyerek, hizmetlerimizi sağlamak için bize kullanım lisansı vermiş olursunuz. Kişisel fotoğraflarınızı üçüncü taraflarla paylaşmıyoruz."
+        },
+        "premium": {
+          "title": "4. Premium Abonelik",
+          "content": "Premium özellikler ücretli bir abonelik gerektirir. Abonelikler iptal edilmedikçe otomatik olarak yenilenir. İadeler, ilgili uygulama mağazası politikalarına tabidir."
+        },
+        "liability": {
+          "title": "5. Sorumluluk Sınırlaması",
+          "content": "Moda önerilerimiz yalnızca bilgi amaçlıdır. Önerilerimize dayalı olarak verilen satın alma kararlarından sorumlu değiliz."
+        },
+        "termination": {
+          "title": "6. Fesih",
+          "content": "Bu koşulların ihlali durumunda hesabınızı feshetme veya askıya alma hakkımız saklıdır. Hesabınızı uygulama ayarlarından istediğiniz zaman silebilirsiniz."
+        }
+      }
+    },
+    "privacy": {
+      "title": "Gizlilik Politikası",
+      "lastUpdated": "Son Güncelleme",
+      "gdprTitle": "GDPR Uyumlu",
+      "gdprText": "Gizliliğinizi korumaya ve GDPR düzenlemelerine uymaya kararlıyız.",
+      "sections": {
+        "dataCollection": {
+          "title": "Topladığımız Veriler",
+          "content": "Hesap bilgileri, analiz için fotoğraflar, stil tercihleri ve dolap öğeleri dahil olmak üzere doğrudan sağladığınız bilgileri topluyoruz. Hizmetlerimizi iyileştirmek için kullanım verilerini de topluyoruz."
+        },
+        "dataUsage": {
+          "title": "Verilerinizi Nasıl Kullanıyoruz",
+          "content": "Verilerinizi kişiselleştirilmiş stil önerileri sağlamak, AI modellerimizi geliştirmek, tercih ettiğiniz bildirimleri göndermek ve premium özelliklerin ödemelerini işlemek için kullanıyoruz."
+        },
+        "dataSharing": {
+          "title": "Veri Paylaşımı",
+          "content": "Kişisel verilerinizi satmıyoruz. Hizmetlerimizi iyileştirmek için ortaklarla anonimleştirilmiş verileri paylaşabiliriz. Ortaklık bağlantıları, komisyon amaçlı satın alımları takip edebilir."
+        },
+        "security": {
+          "title": "Veri Güvenliği",
+          "content": "Şifreleme ve güvenli sunucular dahil endüstri standardı güvenlik önlemleri uyguluyoruz. Fotoğraflar güvenli bir şekilde işlenir ve gereğinden fazla saklanmaz."
+        },
+        "rights": {
+          "title": "Haklarınız",
+          "content": "Kişisel verilerinize erişme, düzeltme veya silme hakkınız vardır. Verilerinizi dışa aktarabilir veya uygulama ayarlarından hesap silme talebinde bulunabilirsiniz."
+        },
+        "cookies": {
+          "title": "Çerezler ve İzleme",
+          "content": "Kullanıcı deneyimini iyileştirmek ve uygulama kullanımını analiz etmek için çerezler ve benzer teknolojiler kullanıyoruz. Tercihlerinizi uygulama ayarlarından yönetebilirsiniz."
+        },
+        "contact": {
+          "title": "Bize Ulaşın",
+          "content": "Gizlilik soruları için privacy@styleadvisor.ai adresinden bize ulaşın. 30 gün içinde yanıt vermeyi hedefliyoruz."
+        }
+      }
+    },
+    "affiliate": {
+      "title": "Ortaklık Açıklaması",
+      "heading": "Nasıl Para Kazanıyoruz",
+      "intro": "StyleAdvisor AI ortaklık pazarlama programlarına katılmaktadır. Bu, uygulamamızdaki bağlantılar aracılığıyla ürün satın aldığınızda komisyon kazanabileceğimiz anlamına gelir.",
+      "howItWorks": "Nasıl Çalışır",
+      "howItWorksContent": "Ürün önerdiğimizde, bazıları ortaklık bağlantıları içerebilir. Tıklayıp satın alırsanız, size ekstra maliyet olmadan küçük bir komisyon alırız.",
+      "whatYouShouldKnow": "Bilmeniz Gerekenler",
+      "bullets": {
+        "commission": "Uygun satın alımlardan küçük bir komisyon kazanıyoruz",
+        "prices": "Bağlantılarımızı kullanıp kullanmamanıza bakılmaksızın fiyatlar aynıdır",
+        "honest": "Önerilerimiz komisyon oranlarına değil, stil analizine dayanmaktadır",
+        "support": "Satın alımlarınız StyleAdvisor AI'ın gelişimini desteklemeye yardımcı olur"
+      },
+      "closing": "Sadece stilinize gerçekten yardımcı olacağına inandığımız ürünleri öneriyoruz. StyleAdvisor AI'ı desteklediğiniz için teşekkür ederiz!"
+    }
+  },
+  "product": {
+    "selectSize": "Beden Seçin",
+    "selectColor": "Renk Seçin",
+    "affiliateNote": "Harici tarayıcıda açılır",
+    "buyNow": "Şimdi Satın Al"
   }
 }
