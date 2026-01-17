@@ -499,12 +499,28 @@ export const mockDailyOutfitIdeas = [
     title: 'Monday Power Look',
     description: 'Start your week with confidence',
     outfit: mockOutfits[0],
+    imageUrl: 'https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=400&h=500&fit=crop',
   },
   {
     id: 'daily-2',
     title: 'Casual Friday Vibes',
     description: 'Relaxed yet professional',
     outfit: mockOutfits[1],
+    imageUrl: 'https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?w=400&h=500&fit=crop',
+  },
+  {
+    id: 'daily-3',
+    title: 'Weekend Brunch',
+    description: 'Effortlessly chic for your weekend plans',
+    outfit: mockOutfits[2],
+    imageUrl: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=400&h=500&fit=crop',
+  },
+  {
+    id: 'daily-4',
+    title: 'Date Night Ready',
+    description: 'Make a lasting impression',
+    outfit: mockOutfits[4],
+    imageUrl: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=400&h=500&fit=crop',
   },
 ];
 
