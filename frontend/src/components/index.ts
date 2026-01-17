@@ -14,3 +14,6 @@ export { OfflineBanner } from './OfflineBanner';
 export { ToastContainer } from './Toast';
 export { PremiumLockOverlay } from './PremiumLockOverlay';
 export { LimitReachedModal } from './LimitReachedModal';
+export { BottomSheet } from './BottomSheet';
+export { PhotoSourceSelector } from './PhotoSourceSelector';
+export { TrendsFilter } from './TrendsFilter';
