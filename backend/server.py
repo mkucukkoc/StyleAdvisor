@@ -10,6 +10,18 @@ from typing import List
 import uuid
 from datetime import datetime
 
+# Import all server routers
+from server.auth import router as auth_router
+from server.email_otp import router as email_otp_router
+from server.google_auth import router as google_auth_router
+from server.apple_auth import router as apple_auth_router
+from server.password_reset import router as password_reset_router
+from server.pdf_read import router as pdf_read_router
+from server.notifications import router as notifications_router
+from server.delete_account import router as delete_account_router
+from server.premium import router as premium_router
+from server.webhooks import router as webhooks_router
+
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
@@ -19,11 +31,18 @@ mongo_url = os.environ['MONGO_URL']
 client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ['DB_NAME']]
 
-# Create the main app without a prefix
-app = FastAPI()
+# Create the main app
+app = FastAPI(
+    title="StyleAdvisor AI API",
+    description="Backend API for StyleAdvisor AI mobile application",
+    version="1.0.0"
+)
 
 # Create a router with the /api prefix
 api_router = APIRouter(prefix="/api")
+
+# Create versioned API router
+api_v1_router = APIRouter(prefix="/api/v1")
 
 
 # Define Models
@@ -38,7 +57,11 @@ class StatusCheckCreate(BaseModel):
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "StyleAdvisor AI Backend API"}
+
+@api_router.get("/health")
+async def health_check():
+    return {"status": "healthy", "service": "StyleAdvisor AI"}
 
 @api_router.post("/status", response_model=StatusCheck)
 async def create_status_check(input: StatusCheckCreate):
@@ -52,8 +75,21 @@ async def get_status_checks():
     status_checks = await db.status_checks.find().to_list(1000)
     return [StatusCheck(**status_check) for status_check in status_checks]
 
-# Include the router in the main app
+# Include all routers in the versioned API router
+api_v1_router.include_router(auth_router)
+api_v1_router.include_router(email_otp_router)
+api_v1_router.include_router(google_auth_router)
+api_v1_router.include_router(apple_auth_router)
+api_v1_router.include_router(password_reset_router)
+api_v1_router.include_router(pdf_read_router)
+api_v1_router.include_router(notifications_router)
+api_v1_router.include_router(delete_account_router)
+api_v1_router.include_router(premium_router)
+api_v1_router.include_router(webhooks_router)
+
+# Include all routers in the main app
 app.include_router(api_router)
+app.include_router(api_v1_router)
 
 app.add_middleware(
     CORSMiddleware,
