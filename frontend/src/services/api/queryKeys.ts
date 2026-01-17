@@ -3,29 +3,40 @@
 // ============================================================
 
 export const QueryKeys = {
-  // Auth
-  currentUser: ['currentUser'] as const,
-
-  // User
-  userProfile: ['userProfile'] as const,
-
   // Analysis
   analysis: (id: string) => ['analysis', id] as const,
-  analysisHistory: (page?: number) => ['analysisHistory', page] as const,
+  analysisHistory: ['analyses', 'history'] as const,
+  analysisHistoryPaginated: (page: number) => ['analyses', 'history', page] as const,
 
   // Products
-  products: (params?: { query?: string; category?: string; page?: number }) =>
-    ['products', params] as const,
-  product: (id: string) => ['product', id] as const,
+  products: ['products'] as const,
+  productSearch: (query: string) => ['products', 'search', query] as const,
+  productDetail: (id: string) => ['products', id] as const,
+  productsByCategory: (category: string) => ['products', 'category', category] as const,
 
   // Wardrobe
-  wardrobeItems: ['wardrobeItems'] as const,
-  wardrobeItem: (id: string) => ['wardrobeItem', id] as const,
+  wardrobe: ['wardrobe'] as const,
+  wardrobeItems: ['wardrobe', 'items'] as const,
+  wardrobeItem: (id: string) => ['wardrobe', 'items', id] as const,
+  wardrobeByCategory: (category: string) => ['wardrobe', 'category', category] as const,
 
   // Favorites
-  favoriteOutfits: ['favoriteOutfits'] as const,
-  favoriteProducts: ['favoriteProducts'] as const,
+  favorites: ['favorites'] as const,
+  favoriteOutfits: ['favorites', 'outfits'] as const,
+  favoriteProducts: ['favorites', 'products'] as const,
+
+  // User
+  user: ['user'] as const,
+  userProfile: ['user', 'profile'] as const,
+  userPreferences: ['user', 'preferences'] as const,
 
   // Subscription
-  subscriptionStatus: ['subscriptionStatus'] as const,
+  subscription: ['subscription'] as const,
+  subscriptionStatus: ['subscription', 'status'] as const,
+
+  // Trends
+  trends: ['trends'] as const,
+  dailyOutfit: ['trends', 'daily-outfit'] as const,
 } as const;
+
+export type QueryKeyType = typeof QueryKeys;
