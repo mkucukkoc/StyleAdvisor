@@ -9,7 +9,7 @@ from pydantic import BaseModel
 from typing import Optional, Dict, Any
 import httpx
 import logging
-from .config import EXTERNAL_API_BASE_URL
+from routers.config import EXTERNAL_API_BASE_URL
 
 router = APIRouter(tags=["Webhooks"])
 

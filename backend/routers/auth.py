@@ -8,7 +8,7 @@ from fastapi import APIRouter, HTTPException, Depends, Header
 from pydantic import BaseModel, EmailStr, Field
 from typing import Optional
 import httpx
-from .config import EXTERNAL_API_BASE_URL
+from routers.config import EXTERNAL_API_BASE_URL
 
 router = APIRouter(prefix="/auth", tags=["Authentication"])
 

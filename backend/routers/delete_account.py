@@ -8,7 +8,7 @@ from fastapi import APIRouter, HTTPException, Header
 from pydantic import BaseModel
 from typing import Optional
 import httpx
-from .config import EXTERNAL_API_BASE_URL
+from routers.config import EXTERNAL_API_BASE_URL
 
 router = APIRouter(prefix="/delete-account", tags=["Delete Account"])
 

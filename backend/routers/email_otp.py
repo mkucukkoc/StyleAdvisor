@@ -7,7 +7,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, EmailStr
 import httpx
-from .config import EXTERNAL_API_BASE_URL
+from routers.config import EXTERNAL_API_BASE_URL
 
 router = APIRouter(prefix="/auth/email", tags=["Email OTP"])
 

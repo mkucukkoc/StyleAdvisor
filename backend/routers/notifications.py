@@ -8,7 +8,7 @@ from fastapi import APIRouter, HTTPException, Header
 from pydantic import BaseModel
 from typing import Optional, List, Dict, Any
 import httpx
-from .config import EXTERNAL_API_BASE_URL
+from routers.config import EXTERNAL_API_BASE_URL
 
 router = APIRouter(prefix="/notifications", tags=["Notifications"])
 

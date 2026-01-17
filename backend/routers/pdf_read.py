@@ -6,7 +6,7 @@
 
 from fastapi import APIRouter, HTTPException
 import httpx
-from .config import EXTERNAL_API_BASE_URL
+from routers.config import EXTERNAL_API_BASE_URL
 
 router = APIRouter(prefix="/pdfread", tags=["PDF Read"])
 
