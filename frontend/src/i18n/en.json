@@ -228,6 +228,13 @@
       "textDescription": "Tell us what you're wearing",
       "recentTitle": "Recent Analyses"
     },
+    "photoSource": {
+      "title": "Select Photo Source",
+      "camera": "Take a Photo",
+      "cameraDesc": "Use your camera to capture your outfit",
+      "gallery": "Choose from Gallery",
+      "galleryDesc": "Select an existing photo from your library"
+    },
     "photoCapture": {
       "title": "Capture Your Outfit",
       "instructions": "Stand in good lighting and capture your full outfit",
